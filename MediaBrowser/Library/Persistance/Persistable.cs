@@ -28,7 +28,7 @@ namespace MediaBrowser.Library.Persistance {
 
 
             foreach (var methodInfo in typeof(BinaryReader).GetMethods()) {
-                if (methodInfo.Name.StartsWith("Read")) {
+                if (methodInfo.Name.StartsWith("Read") && methodInfo.Name != "Read") {
                     var parameters = methodInfo.GetParameters();
                     if (parameters == null || parameters.Length == 0) {
                         readFieldMethods[methodInfo.ReturnType] = methodInfo;
@@ -48,7 +48,8 @@ namespace MediaBrowser.Library.Persistance {
 
 
             foreach (var methodInfo in typeof(Persistable).GetMethods(BindingFlags.Static | BindingFlags.NonPublic)) {
-                if (methodInfo.Name.StartsWith("Read")) {
+                if (methodInfo.Name.StartsWith("Read") && methodInfo.Name != "Read")
+                {
                     var parameters = methodInfo.GetParameters();
                     if (parameters == null || parameters.Length == 1) {
                         readFieldMethods[methodInfo.ReturnType] = methodInfo;
