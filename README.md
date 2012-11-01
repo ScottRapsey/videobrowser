@@ -1,4 +1,4 @@
-A temporary fork of MediaBrowser for Windows 8.
+A temporary fork of MediaBrowser for Windows 8.  Zero support. Unofficial. 
 
 1) Build MediaBrowser solution
 2) Build Installer solution
