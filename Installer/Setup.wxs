@@ -42,9 +42,9 @@
 			<![CDATA[Privileged]]>
 		</Condition>
 
-    <PropertyRef Id="NETFRAMEWORK35" />
+    <PropertyRef Id="NETFRAMEWORK40FULL" />
     <Condition Message="!(loc.LaunchCondition_WrongDotNetFramework)">
-      <![CDATA[Installed OR NETFRAMEWORK35]]>
+      <![CDATA[Installed OR NETFRAMEWORK40FULL]]>
     </Condition>
 
 		<!-- This is a list of directories that are used by this product as installation locations or custom -->
