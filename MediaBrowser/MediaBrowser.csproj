@@ -1020,8 +1020,7 @@
   <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>%25windir%25\eHome\McmlVerifier.exe -verbose -assemblyredirect:"$(FullyQualifiedOutputPath)" -directory:"$(ProjectDir)Markup"
-cd "$(ProjectDir)"
+    <PostBuildEvent>cd "$(ProjectDir)"
 "$(ProjectDir)DevInstall.cmd" /$(ConfigurationName)</PostBuildEvent>
     <PreBuildEvent>copy "$(ProjectDir)Markup\StylesDefault.mcml" "$(TargetDir)Styles_DoNotEdit.mcml"
 copy "$(ProjectDir)Markup\FontsDefault.mcml" "$(TargetDir)Fonts_DoNotEdit.mcml"</PreBuildEvent>
