@@ -192,6 +192,7 @@
     <DirectoryRef Id="APPROOTDIRECTORY">
       <Component Id="Configurator.exe" Guid="3186FBE0-641C-45f9-AA16-7EAA85B7405C" DiskId="1">
         <File Id="Configurator.exe" Name="Configurator.exe" KeyPath="yes" Source="..\Configurator\bin\$(var.BuildType)\Configurator.exe" Checksum="yes" Vital="yes"/>
+        <File Id="Configurator.exe.config" Name="Configurator.exe.config" Source="..\Configurator\bin\$(var.BuildType)\Configurator.exe.config" Checksum="no" />
       </Component>
 			<Component Id="MediaBrowser.dll" Guid="3D581843-2412-458d-AF79-29845B277677" DiskId="1">
 				<File Id="MediaBrowser.dll" Name="MediaBrowser.dll" KeyPath="yes" Source="..\MediaBrowser\bin\$(var.BuildType)\MediaBrowser.dll" Checksum="yes" Vital="yes" Assembly=".net"/>
@@ -210,6 +211,7 @@
       </Component>
       <Component Id="MediaBrowserService.exe" Guid="D19774DD-253A-47E2-94FA-3EFB220E2B77" DiskId="1">
         <File Id="MediaBrowserService.exe" Name="MediaBrowserService.exe" Source="..\MediaBrowserService\bin\$(var.BuildType)\MediaBrowserService.exe" Checksum="no"/>
+        <File Id="MediaBrowserService.exe.config" Name="MediaBrowserService.exe.config" Source="..\MediaBrowserService\bin\$(var.BuildType)\MediaBrowserService.exe.config" Checksum="no" />
       </Component>
       <Component Id="MBMigrate.exe" Guid="D66E860A-24F2-44A5-B9E1-BD24BF3D7146" DiskId="1">
         <File Id="MBMigrate.exe" Name="MBMigrate.exe" Source="..\MBMigrate\bin\$(var.BuildType)\MBMigrate.exe" Checksum="no"/>
